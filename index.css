@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", system-ui;
+}
+
+#bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.con{
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: auto;
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+}
+.logo :hover{
+    cursor: pointer;
+
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    transition: 300ms;
+}
+
+.top{
+    position: relative;
+}
+
+.bg{
+    width: 100%;
+    height: 100vh;
+}
+
+#background-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.n1{
+    font-family: "Rubik";
+    width: 100%;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 7%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, bold;
+}
+
+.cntr{
+    padding: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 13.5rem);
+    padding-right: 75%;
+}
+
+.start-button{
+    height: 50px;
+    width: 50px;
+    margin-top: 1rem;
+}
+
+.con{
+    max-width: 1200px;
+    padding-left: 6%;
+    padding-bottom: 5%;
+}
+
+.con p{
+    color: white;
+}
+
+button{
+    color: #1f1f1f;
+    background: #ffffff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+footer{
+    height: auto;
+}
+
+.txt{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.n1 {
+    font-family: "Rubik";
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

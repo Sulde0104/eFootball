@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eFootball</title>
+    <link rel="icon shortcut" href="eFootball (2021) Logo (PNG480p) - Vector69Com.png" type="image">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="background_about">
+        <img src="bg.webp" alt="bg">
+    </div>
+    <section class="top">
+        <nav class="con">
+            <img src="dollar.png" class="logo" alt="image">
+            <img src="money.png" class="logo" alt="image">
+
+            <div class="gap">
+                <a href=""><img src="alert.png" alt="icon" height="50"></a>
+                <a href=""><img src="communication.png" alt="icon" height="50"></a>
+                <a href=""><img src="inbox.png" alt="icoon" height="50"></a>
+                <a href=""><img src="notification.png" alt="icon" height="50"></a>
+            </div>
+        </nav>
+    </section>
+
+    <section class="con s1">
+        <p>
+        <div class="con">
+
+            <div class="rectangle">
+                <div class="gap1">
+                    <div class="mainRect">
+                        <p alt="icon">Home</p>
+                    </div>
+                    <a href="Missions.html" alt="icon">Missions</a>
+                    <a href="" alt="icon">Shop</a>
+                    <a href="Extras.html" alt="icon">Extras</a>
+                </div>
+            </div>
+        </div>
+        </p>
+
+        <div class="album">
+            <!-- Зургийн цомгийг агуулагч -->
+            <div class="container">
+                <!-- Томоор харагдах зургууд болон дугаарлалт -->
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="worldwide.png" style="width:100%" id="imagee">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="european club attackers.png" style="width:100%" id="imagee">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="J.League.png" style="width:100%" id="imagee">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="match_pass.png" style="width:100%" id="imagee">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="season 1.png" style="width:100%" id="imagee">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext"></div>
+                    <img src="season 6.png" style="width:100%" id="imagee">
+                </div>
+                <!-- Дараах болон өмнөх зураг руу шилжих сум -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <section class="con">
+            <div class="gap">
+                <div class="menuu">
+                    <button id="menuButton">
+                        <img src="football.png" alt="icon" class="icon">
+                    </button>
+                    <button id="menuButton">
+                        <img src="football-field.png" alt="icon" class="icon">
+                    </button>
+                    <button id="menuButton">
+                        <img src="shield.png" alt="icon" class="icon">
+                    </button>
+                    <button id="menuButton">
+                        <img src="add.png" alt="icon" class="icon">
+                    </button>
+                    <button id="menuButton">
+                        <img src="flag.png" alt="icon" class="icon">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        // Дараах болон өмнөх зураг руу шилжих үйлдэл
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        // Жижиг зургуудын үйлдэл
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>

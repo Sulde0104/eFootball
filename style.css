@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", system-ui;
+}
+
+.mainRect{
+    height: 30px;
+    width: 100px;
+    background-color: gray;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.rectangle{
+    width: auto;
+    height: 30px;
+    background-color: #313131;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border: none;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+}
+
+.bodyy{
+    padding-left: 6%;
+}
+
+.mission{
+    display: flex;
+    gap: 7rem;
+    padding-left: 4rem;
+}
+
+.mission img{
+    border-radius: 25px;
+}
+
+#imagee{
+    border-radius: 30px;
+}
+
+.gap1 {
+    display: flex;
+    gap: 15rem;
+}
+
+.gap2 {
+    display: flex;
+    gap: 25rem;
+}
+
+.gap3 {
+    display: flex;
+    gap: 25rem;
+    padding-top: 3rem;
+}
+
+.gap4 {
+    display: flex;
+    gap: 25rem;
+    padding-top: 3rem;
+}
+
+#info{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.mainRect1{
+    height: 75px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.background_about{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #000000;
+}
+
+.con {
+    max-width: 1200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin: auto;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.logo :hover {
+    cursor: pointer;
+
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    nav {}
+}
+
+.con s1 {
+    display: block;
+}
+
+#menuButton {
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.menuu {
+    display: contents;
+}
+
+.gap {
+    display: flex;
+    gap: 4rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.25rem;
+    transition: 300ms;
+}
+
+
+a {
+    color: #ffffff;
+}
+
+.top {
+    position: relative;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+}
+
+#background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.n2 {
+    font-family: "Rubik Scribble";
+    font-size: 6rem;
+    color: #00ffbb;
+}
+
+.n1 {
+    font-family: "Rubik";
+    width: 100%;
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: left;
+    padding-left: 7%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, bold;
+}
+
+.cntr {
+    padding: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: calc(100vh - 13.5rem);
+}
+
+.start-button {
+    height: 50px;
+    width: 50px;
+}
+
+.con {
+    max-width: 1200px;
+    padding-left: 6%;
+    padding-bottom: 5%;
+}
+
+.con p {
+    color: white;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    background-color: #0e0e0e;
+}
+
+.wrapper {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.wrapper div {
+    width: 100%;
+    height: 30rem;
+}
+
+
+.title {
+    color: #ffffff;
+    padding: 4rem 0 2rem 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#contact {
+    margin-bottom: 8rem;
+}
+
+form {
+    max-width: 30rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto 3rem;
+    gap: 1rem;
+    background-color: #1f1f1f;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 2.5rem;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-size: 1.25rem;
+    color: #ccc;
+}
+
+textarea {
+    height: 20rem;
+}
+
+button {
+    color: #1f1f1f;
+    background: #ffffff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    height: auto;
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.socials div {
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #000000;
+}
+
+.socials div i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Зураг болон сумнуудыг агуулагчтай харьцангуй байршуулна */
+.container {
+    position: relative;
+}
+
+/* Эхлээд бүх зургийг нууна */
+.mySlides {
+    display: none;
+}
+
+/* Баруун зүүн сум */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Баруун сумыг барууун талд байрлуулна */
+
+.next {
+    right: 0;
+    border-radius: 50px 0 0 50px;
+}
+
+/* Суман дээр очиход цаад өнгийг бараан болгоно */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.album{
+    padding-top: 20px;
+}
